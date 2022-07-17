@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//parameters of database
 const Book = new mongoose.Schema({
     name: {type: String, require: true},
     author: {type: String, require:true},

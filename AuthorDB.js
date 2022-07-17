@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//parameters of database
 const Author = new mongoose.Schema({
     name: {type: String, require: true},
     description: {type: String, require:true},
