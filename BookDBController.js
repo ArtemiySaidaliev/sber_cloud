@@ -4,7 +4,7 @@ import BookDBService from "./BookDBService.js";
 class BookDBController {
     async create(req, res) {
         try {
-            const book = await BookDBService.create(req.body, req.files.picture)
+            const book = await BookDBService.create(req.body, req.files.pdf)
             res.json(book)
         } catch (e) {
             res.status(500).json(e)
